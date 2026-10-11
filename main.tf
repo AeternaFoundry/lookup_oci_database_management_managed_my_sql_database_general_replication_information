@@ -1,0 +1,6 @@
+data "oci_database_management_managed_my_sql_database_general_replication_information" "database_management_managed_my_sql_database_general_replication_information_lookup" {
+  for_each = var.database_management_managed_my_sql_database_general_replication_information_lookup
+
+  managed_my_sql_database_id = each.value.managed_my_sql_database_id
+}
+
